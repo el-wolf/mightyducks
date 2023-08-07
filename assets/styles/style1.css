@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-image: url(../images/design1_image1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 15%;
+  background-clip: border-box;
+  padding: 4rem;
+  border: 1px solid black;
+  align-items: center;
+  height: 250px;
+}
+
+header img {
+  display: none;
+}
+
+header .logoMightyDucks-01 {
+  display: inline-block;
+  position: absolute;
+  top: 123px;
+  right: 100px;
+}
+
+header h1 {
+  color: #fffb12;
+  text-shadow: 1px 1px 0 #ffbb00, -1px 1px 0 #0000, 1px -1px 0 #0000,
+    -1px -1px 0 #0000;
+  display: inline-block;
+  text-align: center;
+  font-weight: 1000;
+}
+
+nav {
+  float: left;
+  display: inline;
+}
+
+nav li {
+  margin-bottom: 150px;
+  margin-top: 80px;
+}
+
+nav > a {
+  display: block;
+  margin: 0 3em 4em 3em;
+}
+
+main > ul {
+  display: inline;
+}
+
+nav a {
+  text-decoration: underline;
+  color: #fffb12;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  text-shadow: 1px 1px 0 #ffbb00, -1px 1px 0 #0000, 1px -1px 0 #0000,
+    -1px -1px 0 #0000;
+}
+
+main dt {
+  margin-top: 25px;
+  margin-left: 250px;
+}
+
+main dt dl {
+  display: inline-block;
+  padding-bottom: 150px;
+}
+
+main dd {
+  padding-bottom: 105px;
+  margin-left: 270px;
+}
+
+main h2 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+.about-main dl {
+  width: 90%;
+}
+
+.contact-main p {
+  padding-top: 50px;
+  padding-left: 150px;
+}

@@ -9,6 +9,9 @@
       href="../images/logoIcon.ico"
       type="image/x-icon"
     >
+    <!-- <link rel="stylesheet" href="../styles/style1.css"> -->
+    <link rel="stylesheet" href="../styles/style2.css">
+
   </head>
   <body>
     <header>
@@ -16,24 +19,31 @@
         src="../images/logoMightyDucks-01.png"
         alt="Logo Mighty Ducks"
         width="200"
+        class="logoMightyDucks-01"
       >
 
       <h1>Mighty Ducks Hockey League</h1>
-
-      <nav>
-        <ul>
-          <li><a href="../../home.html">Home</a></li>
-          <li><a href="./about.html">About MDHL</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      
+      <div id="banner-content">
+        <img
+          src="../images/design1_image2.jpg"
+          alt=""
+          id="banner"
+          width="200"
+        />
+      </div>
     </header>
-    <main>
-      <img
-        src="../images/hockey3.jpg"
-        alt="Dos jugadores de MDHL en cancha+"
-        width="200"
-      >
+
+    <nav>
+      <ul>
+        <li class="home"><a href="../../index.html">Home</a></li>
+        <li class="about"><a href="./about.html">About MDHL</a></li>
+        <li class="contact"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="contact-main">
+      <h2>Contact</h2>
       <p>
         Please email us at
         <a
@@ -45,9 +55,5 @@
       </p>
       <p>We reply to your email as soon as we can.</p>
     </main>
-    <footer>
-      &copy; Copyright 2023 |
-      <a href="#" target="_blank" rel="noopener noreferrer">MDHL</a>
-    </footer>
   </body>
 </html>
