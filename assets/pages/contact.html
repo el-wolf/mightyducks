@@ -10,8 +10,8 @@
       type="image/x-icon"
     >
     <!-- <link rel="stylesheet" href="../styles/style1.css"> -->
-    <link rel="stylesheet" href="../styles/style2.css">
-
+    <!-- <link rel="stylesheet" href="../styles/style2.css"> -->
+    <link rel="stylesheet" href="../styles/style3.css">
   </head>
   <body>
     <header>
@@ -23,37 +23,49 @@
       >
 
       <h1>Mighty Ducks Hockey League</h1>
-      
-      <div id="banner-content">
-        <img
-          src="../images/design1_image2.jpg"
-          alt=""
-          id="banner"
-          width="200"
-        />
-      </div>
     </header>
 
     <nav>
       <ul>
         <li class="home"><a href="../../index.html">Home</a></li>
-        <li class="about"><a href="./about.html">About MDHL</a></li>
-        <li class="contact"><a href="#">Contact</a></li>
+        <li class="about">
+          <a href="../pages/about.html">About MDHL</a>
+        </li>
+        <li class="active">
+          <a href="#">Contact</a>
+        </li>
+        <li class="Rules"><a href="../pages/rules.html">Rules</a></li>
+        <li class="gameinfo">
+          <a href="../pages/gameinfo.html">Game Information</a>
+        </li>
       </ul>
     </nav>
-
-    <main class="contact-main">
-      <h2>Contact</h2>
-      <p>
-        Please email us at
-        <a
-          href="emailto:mdhl@chihockey.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >mdhl@chihockey.org</a
-        >
-      </p>
-      <p>We reply to your email as soon as we can.</p>
-    </main>
+    <div class="container">
+      <aside class="gallery">
+        <h2 class="gallery-title">Gallery</h2>
+        <ul class="gallery-list">
+          <li>
+            <img src="../images/design1_image1.jpg" alt="Hockey image 1">
+          </li>
+          <li>
+            <img src="../images/design1_image2.jpg" alt="Hockey image 2">
+          </li>
+          <li><img src="../images/hockey3.jpg" alt="Hockey image 3"></li>
+        </ul>
+      </aside>
+      <main class="contact-main">
+        <h2>Contact</h2>
+        <p>
+          Please email us at:
+          <a
+            href="emailto:mdhl@chihockey.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            >mdhl@chihockey.org</a
+          >
+        </p>
+        <p>We reply to your email as soon as we can.</p>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  height: 12vh;
+  justify-content: flex-start;
+  background-image: url(../images/web_design3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  background-clip: border-box;
+  padding: 4rem 1px 4rem 1px;
+  border: 1px solid black;
+  z-index: -1;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 35%;
+  justify-content: space-evenly;
+}
+
+header .logoMightyDucks-01 {
+  width: 18%;
+}
+
+header h1 {
+  color: #f8e12e;
+  text-shadow: 1px 1px 0 #0000, -2px 2px 0 #0000, 1px -1px 0 #0000,
+    -2px -2px 0 #0000;
+  background: rgb(248, 225, 46);
+  background: linear-gradient(
+    131deg,
+    rgba(248, 225, 46, 0.33) 0%,
+    rgba(0, 0, 0, 0.7497373949579832) 33%,
+    rgba(0, 0, 0, 0.7497373949579832) 66%,
+    rgba(248, 225, 46, 0.3295693277310925) 100%
+  );
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 1800;
+  align-self: center;
+  font-size: 2.5rem;
+  order: -1;
+  padding: 5px;
+}
+
+#banner {
+  display: none;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f8e12e;
+}
+
+.active {
+  background-color: #f8e12e;
+  color: black;
+  border-radius: 4px;
+}
+
+.active a {
+  color: black;
+}
+
+.container {
+  display: flex;
+}
+
+.gallery {
+  flex: 0.5;
+  padding-left: 5px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  border: 1px solid black;
+  height: 66vh;
+}
+
+.gallery-title {
+  color: black;
+  text-align: center;
+  padding: 3.2%;
+  border: 1px solid black;
+}
+
+.gallery-list {
+  list-style: none;
+  padding: 12px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gallery-list li {
+  text-align: center;
+}
+
+.gallery-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+.index-main,
+.about-main,
+.contact-main,
+.rules-main,
+.gameinfo-main {
+  flex: 2;
+  margin-left: 10px;
+  border: 1px solid black;
+  height: 66vh;
+}
+
+.index-main h2,
+.about-main h2,
+.contact-main h2,
+#rules,
+.gameinfo-main h2 {
+  color: black;
+  text-align: center;
+  padding: 0.8%;
+  border-bottom: 1px solid black;
+}
+
+.index-main dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.about-main dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.index-main dt,
+.index-main dd,
+.about-main dt,
+.about-main dd {
+  align-self: center;
+  text-align: center;
+  width: 90%;
+}
+
+.index-main dt dl,
+.about-main dt dl {
+  padding-bottom: 20%;
+}
+
+.index-main dd,
+.about-main dd {
+  padding-bottom: 10.5%;
+}
+
+.contact-main p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15%;
+}
+
+.rules-main {
+  margin-left: 1.5rem;
+  border: none;
+  width: 100%;
+}
+
+#rules-p {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rules-main dl {
+  width: 95%;
+}
+
+.rules-main dd {
+  margin: 2rem 0 2rem 1.5rem;
+}
+
+.rules-main .ihf h2 {
+  margin-bottom: 2rem;
+}
+
+.rules-main .ihf .dimencompe .dimension,
+.rules-main .ihf .dimencompe .compefi,
+.rules-main .ihf .dimencompe .fiage {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.rules-main .ihf .dimencompe .dimension p,
+.rules-main .ihf .dimencompe .compefi p,
+.rules-main .ihf .dimencompe .fiage ol {
+  font-weight: normal;
+
+  margin-bottom: 1.5rem;
+}
+
+.rules-main .field {
+  list-style-type: lower-latin;
+  margin-bottom: 5px;
+}
+
+.rules-main .allplay h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rules-main .allplay .allplayul {
+  margin-bottom: 2rem;
+}
+
+.rules-main .allplay .allplayul .allplayli {
+  list-style-type: circle;
+  margin-left: 1.2rem;
+}
+
+.list {
+  width: 90%;
+  text-align: justify;
+}
+
+.gameinfo-main table {
+  width: 100%;
+  border-spacing: 0.5rem;
+  border-collapse: separate;
+}
+
+.gameinfo-main table tbody tr td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.gameinfo-main .addinfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.gameinfo-main .addinfo h3 {
+  margin-top: 1rem;
+}
+
+.gameinfo-main .addinfo .gameinfo-contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.2rem;
+}

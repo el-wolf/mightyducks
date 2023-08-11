@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Mighty Ducks Hockey League</title>
     <link
       rel="shortcut icon"
       href="./assets/images/logoIcon.ico"
       type="image/x-icon"
-    />
+    >
     <!-- <link rel="stylesheet" href="./assets/styles/style1.css"> -->
-    <link rel="stylesheet" href="./assets/styles/style2.css" />
+    <!-- <link rel="stylesheet" href="./assets/styles/style2.css"> -->
+    <link rel="stylesheet" href="./assets/styles/style3.css">
   </head>
   <body>
     <header>
@@ -19,44 +20,57 @@
         alt="Logo Mighty Ducks"
         width="200"
         class="logoMightyDucks-01"
-      />
+      >
 
       <h1>Mighty Ducks Hockey League</h1>
-
-      <div id="banner-content">
-        <img
-          src="./assets/images/design1_image2.jpg"
-          alt=""
-          id="banner"
-          width="200"
-        />
-      </div>
     </header>
 
     <nav>
       <ul>
-        <li class="home"><a href="#">Home</a></li>
-        <li class="about"><a href="./assets/pages/about.html">About MDHL</a></li>
-        <li class="contact"><a href="./assets/pages/contact.html">Contact</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li class="about">
+          <a href="./assets/pages/about.html">About MDHL</a>
+        </li>
+        <li class="contact">
+          <a href="./assets/pages/contact.html">Contact</a>
+        </li>
+        <li class="Rules"><a href="./assets/pages/rules.html">Rules</a></li>
+        <li class="gameinfo">
+          <a href="./assets/pages/gameinfo.html">Game Information</a>
+        </li>
       </ul>
     </nav>
+    <div class="container">
+      <aside class="gallery">
+        <h2 class="gallery-title">Gallery</h2>
+        <ul class="gallery-list">
+          <li>
+            <img src="./assets/images/design1_image1.jpg" alt="Hockey image 1">
+          </li>
+          <li>
+            <img src="./assets/images/design1_image2.jpg" alt="Hockey image 2">
+          </li>
+          <li><img src="./assets/images/hockey3.jpg" alt="Hockey image 3"></li>
+        </ul>
+      </aside>
 
-    <main class="index-main">
-      <section id="events">
-        <h2>Upcoming Events</h2>
-        <dl>
-          <dt><h4>August 4</h4></dt>
-          <dd><p>MDSL Fundraiser</p></dd>
+      <main class="index-main">
+        <section id="events">
+          <h2>Upcoming Events</h2>
+          <dl>
+            <dt><h4>August 4</h4></dt>
+            <dd><p>MDSL Fundraiser</p></dd>
 
-          <dt><h4>August 16</h4></dt>
-          <dd><p>Season Kick-off: Meet the Teams</p></dd>
+            <dt><h4>August 16</h4></dt>
+            <dd><p>Season Kick-off: Meet the Teams</p></dd>
 
-          <dt><h4>September 1</h4></dt>
-          <dd>
-            <p>First Game of the Season (Check Game Schedule for details)</p>
-          </dd>
-        </dl>
-      </section>
-    </main>
+            <dt><h4>September 1</h4></dt>
+            <dd>
+              <p>First Game of the Season (Check Game Schedule for details)</p>
+            </dd>
+          </dl>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
