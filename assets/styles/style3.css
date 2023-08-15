@@ -155,6 +155,10 @@ nav ul li a {
   height: auto;
 }
 
+.places-list iframe {
+  width: 100%
+}
+
 .index-main,
 .about-main,
 .contact-main,
@@ -206,6 +210,10 @@ nav ul li a {
 .index-main dd,
 .about-main dd {
   padding-bottom: 10.5%;
+}
+
+.title {
+  font-weight: bold
 }
 
 .contact-main p {
