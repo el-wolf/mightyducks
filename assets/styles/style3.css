@@ -305,3 +305,82 @@ nav ul li a {
   justify-content: space-evenly;
   margin-top: 1.2rem;
 }
+
+.contact-main .form .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact-main .form .info .birth {
+  margin-top: 0.3rem;
+}
+
+.contact-main .form .info .gender,
+.contact-main .form .info .grade {
+  margin: 0.3rem;
+}
+
+.contact-main .form .elementary .school-1,
+.contact-main .form .elementary .school-2,
+.contact-main .form .position,
+.contact-main .form .size,
+.contact-main .form .ptp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: baseline;
+}
+
+.submitbtn {
+  margin: 0.3rem 0 0.3rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: large;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    padding: 5rem 1px 5rem 1px;
+    gap: 5%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+  header .logoMightyDucks-01 {
+    width: 10rem;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .gameinfo-main {
+    order: 1;
+  }
+
+  .places {
+    order: 2;
+    height: 100%;
+    flex: 0 0 auto;
+  }
+
+  .contgameinfo {
+    flex-direction: column;
+  }
+
+  .gameinfo-contact {
+    flex-direction: column;
+  }
+
+  .gameinfo-main, .gameinfo-main h2, .gameinfo-main table, .gameinfo-main table tbody tr td, .gameinfo-main .addinfo {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0rem
+  }
+}

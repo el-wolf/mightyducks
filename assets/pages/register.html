@@ -49,24 +49,133 @@
         </aside>
         <main class="contact-main">
             <h2>Registration Form</h2>
-            <form action="./show_data.html" method="get">
-                <fieldset>
-                    <input type="radio" name="genero" id="masculino" value="Masculino">
-                    <label for="masculino">Masculino</label>
+            <form action="./show_data.html" method="get" class="form">
+                <fieldset class="info">
+                    <label for="name">Player's First Name:</label>
+                    <input type="text" autocomplete="name" name="name" id="f-name" value="">
+                    <label for="lastname">Last name:</label>
+                    <input type="text" autocomplete="family-name" name="lastname" id="l-name" value="">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                    <label for="zip">Zip code:</label>
+                    <input type="text" autocomplete="postal-code" name="zip" id="zip">
+                    <div class="birth">
+                        <label for="birth">Birth Date:</label>
+                        <input type="date" autocomplete="bday" name="birth" id="birth" max="2050-12-31"
+                            min="2000-01-01">
+                    </div>
+
+                    <div class="gender">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" id="gender female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="gender male" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="grade">
+                        <label for="grade">Grade:</label>
+                        <input type="radio" name="grade" id="grade pre-school" value="pre-school">
+                        <label for="pre-school">Pre-school</label>
+
+                        <input type="radio" name="grade" id="grade first" value="first-school">
+                        <label for="first">1st</label>
+
+                        <input type="radio" name="grade" id="grade second" value="second-grade">
+                        <label for="second">2nd</label>
+
+                        <input type="radio" name="grade" id="grade third" value="third-grade">
+                        <label for="third">3rd</label>
+
+                        <input type="radio" name="grade" id="grade fourth" value="fourth-grade">
+                        <label for="fourth">4th</label>
+
+                        <input type="radio" name="grade" id="grade fifth" value="fifth-grade">
+                        <label for="fifth">5th</label>
+                    </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="elementary">
                     <legend>Wich elementary school do you live near?</legend>
+                    <label for="closestschool">Closest School:</label>
+                    <div class="school-1">
+                        <input type="radio" name="closestschool" id="closestschool aj" value="aj">
+                        <label for="aj">AJ Katzenmaier</label>
+
+                        <input type="radio" name="closestschool" id="closestschool gb" value="greenbay">
+                        <label for="gb">Greenbay</label>
+
+                        <input type="radio" name="closestschool" id="closestschool hay" value="ayeager">
+                        <label for="aj">Howard A Yeager</label>
+
+                    </div>
+                    <div class="school-2">
+                        <input type="radio" name="closestschool" id="closestschool ph" value="phart">
+                        <label for="ph">Marjorie P Hart</label>
+
+                        <input type="radio" name="closestschool" id="closestschool ne" value="northelementary">
+                        <label for="ne">North elementary</label>
+
+                        <input type="radio" name="closestschool" id="closestschool sh" value="southelementary">
+                        <label for="aj">South Elementary</label>
+                    </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="position">
                     <legend>What position(s) do you normally play? (check all that apply)</legend>
+
+                    <input type="checkbox" name="forward" id="forward" value="forward">
+                    <label for="forward">Forward</label>
+                    <input type="checkbox" name="midfield" id="midfield" value="midfield">
+                    <label for="midfield">Midfield</label>
+                    <input type="checkbox" name="defense" id="defense" value="defense">
+                    <label for="defense">Defense</label>
+                    <input type="checkbox" name="goalkeeper" id="goalkeeper" value="goalkeeper">
+                    <label for="goalkeeper">Goalkeeper</label>
+
                 </fieldset>
-                <fieldset>
+                <fieldset class="size">
                     <legend>Uniform Size</legend>
+
+                    <input type="radio" name="uniformsize" id="uniformsize ys" value="ys">
+                    <label for="ys">Youth Small</label>
+
+                    <input type="radio" name="uniformsize" id="uniformsize ym" value="ym">
+                    <label for="ym">Youth Medium</label>
+
+                    <input type="radio" name="uniformsize" id="uniformsize yl" value="yl">
+                    <label for="yl">Youth Large</label>
+
+                    <input type="radio" name="uniformsize" id="uniformsize sm" value="sm">
+                    <label for="sm">Small</label>
+
+                    <input type="radio" name="uniformsize" id="uniformsize m" value="m">
+                    <label for="m">Medium</label>
+
+                    <input type="radio" name="uniformsize" id="uniformsize l" value="l">
+                    <label for="aj">Large</label>
+
+                    <input type="radio" name="uniformsize" id="uniformsize xl" value="xl">
+                    <label for="xl">Extra-Large</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="ptp">
                     <legend>Permissions to Play</legend>
+                    <label for="ptp">I, the parent or guardian of the minor registrant, agree that the registrant and I
+                        will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the
+                        possibility of physical injury associated with hockey and in consideration for the "League"
+                        accepting the registrant for its hockey programs and activities, I hereby release, discharge,
+                        and/or otherwise indemnify MDHL, practices and games, against any claim by or on behalf of the
+                        registrant as a result of the registrant's participation in the programand/orbeing transported
+                        to or from MDHL sponsored activities, wich transportation.</label>
+                    <br>
+                    <label for="ptp">By signing below, I hereby agree and authorize the above. In addition, by signing
+                        below, I also acknowledge that I have read the cancellation policy and agree to its
+                        terms.</label>
+                    <label for="signature">Parent/Guardian Signature:</label>
+                    <input type="text" name="signature" id="ptp signature">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="ptp" max="2050-12-31" min="2000-01-01">
+
+
                 </fieldset>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="submitbtn">
             </form>
         </main>
     </div>
